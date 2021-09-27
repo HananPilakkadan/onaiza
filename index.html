@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onaiza-Shop</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/all.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="./css/slick-theme.css" />
+  <link rel="stylesheet" href="./css/slick.css" />
+  <script src="./js/jquery-min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/wow.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- fav-icon -->
+  <link rel="icon" href="./images/icons/onaiza-fav-icon.png" />
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="logo-container">
+        <img src="./images/icons/onaiza-white-logo.svg" alt="Logo" class="logo" />
+        <div class="search-bar">
+          <form action="">
+            <input type="text" placeholder="Search the product..." />
+            <img src="./images/search.png" alt="Search" class="search" />
+          </form>
+        </div>
+        <ul class="menu">
+          <li><a href="#">HOME</a></li>
+          <li class="changed"><a href="#">SHOP</a></li>
+          <li><a href="#">OFFER</a></li>
+        </ul>
+        <ul class="mobile-menu">
+          <li><a href="#">HOME</a></li>
+          <li class="changed"><a href="#">SHOP</a></li>
+          <li><a href="#">OFFER</a></li>
+          <ul class="nav">
+            <li>
+              <a href="#"><img src="./images/icons/help (1).svg" alt="Help" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icons/heart.svg" alt="Whishlist" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icons/bell (1).svg" alt="Notifications" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icons/profile.svg" alt="USer" /></a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <div class="user-section">
+        <select name="" id="">
+          <option value="EN">EN</option>
+          <option value="AR">AR</option>
+        </select>
+        <ul class="nav">
+          <li>
+            <a href="#"><img src="./images/icons/help (1).svg" alt="Help" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/icons/heart.svg" alt="Whishlist" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/icons/bell (1).svg" alt="Notifications" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/icons/profile.svg" alt="USer" /></a>
+          </li>
+        </ul>
+        <div class="menu-icon" onclick="showMenu()">
+          <span><i class="fas fa-bars"></i></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header-end -->
+
+  <!--category-start -->
+
+  <div class="category">
+    <div class="wrapper">
+      <div class="cate">
+        <span>category <img src="./images/icons/Downarow-svg.svg" alt="Arrow"></span>
+      </div>
+      <div class="content">
+        <select name="" id="">
+          <option value="Electroncs">Electroncs</option>
+          <option value="TV">TV</option>
+          <option value="Camera">Camera</option>
+        </select>
+        <select name="" id="">
+          <option value="Fruits">Fruits</option>
+          <option value="Apple">Apple</option>
+          <option value="Mango">Mango</option>
+        </select>
+        <select name="" id="">
+          <option value="Restaurent">Restaurent</option>
+          <option value="ABC">ABC</option>
+          <option value="Freshy">Freshy</option>
+        </select>
+        <select name="" id="">
+          <option value="Grocery">Grocery</option>
+          <option value="Sugar">Sugar</option>
+          <option value="Powders">Powders</option>
+        </select>
+        <select name="" id="">
+          <option value="Vegitable">Vegitable</option>
+          <option value="Tomato">Tomato</option>
+          <option value="Potato">Potato</option>
+        </select>
+        <select name="" id="">
+          <option value="Bekary">Bekary</option>
+          <option value="Cakes">Cakes</option>
+          <option value="Mixers">Mixers</option>
+        </select>
+        <select name="" id="">
+          <option value="Meat">Meat</option>
+          <option value="Beaf">Beaf</option>
+          <option value="Motton">Motton</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <!-- category-end -->
+
+  <!-- shops-start-here -->
+
+  <div class="shops">
+    <div class="wrapper">
+      <h1>Near by Shops</h1>
+      <div class="container slider">
+        <div class="item mega">
+          <div class="head">
+            <h2>The Mega Store</h2>
+            <div class="location">
+              <img src="./images/icons/Icon material-location-on.svg" alt="Location">
+              <span>Nilamel</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <h2>5 Km</h2>
+            <div class="rate">
+              <img src="./images/icons/Icon ionic-ios-star.svg" alt="star">
+              <span>4.5</span>
+            </div>
+          </div>
+        </div>
+        <div class="item green">
+          <div class="head">
+            <h2>Green Organica</h2>
+            <div class="location">
+              <img src="./images/icons/Icon material-location-on.svg" alt="Location">
+              <span>Kadakkal</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <h2>7 Km</h2>
+            <div class="rate">
+              <img src="./images/icons/Icon ionic-ios-star.svg" alt="star">
+              <span>4.5</span>
+            </div>
+          </div>
+        </div>
+        <div class="item sweet">
+          <div class="head">
+            <h2>Sweet Spot</h2>
+            <div class="location">
+              <img src="./images/icons/Icon material-location-on.svg" alt="Location">
+              <span>Veykal</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <h2>3 Km</h2>
+            <div class="rate">
+              <img src="./images/icons/Icon ionic-ios-star.svg" alt="star">
+              <span>4.5</span>
+            </div>
+          </div>
+        </div>
+        <div class="item green">
+          <div class="head">
+            <h2>Green Organica</h2>
+            <div class="location">
+              <img src="./images/icons/Icon material-location-on.svg" alt="Location">
+              <span>Kadakkal</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <h2>7 Km</h2>
+            <div class="rate">
+              <img src="./images/icons/Icon ionic-ios-star.svg" alt="star">
+              <span>4.5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- shops-end-here -->
+
+  <!-- feature-products -->
+
+  <div class="feature">
+    <div class="wrapper">
+      <h1>Featured Products</h1>
+      <div class="content">
+        <div class="deal-of-day">
+          <div class="text">
+            <h2>Deal Of The Day</h2>
+            <p><span>New</span> offfers starts everyday <span>12</span> midnight</p>
+          </div>
+          <div class="image">
+            <img src="./images/Baby-png.png" alt="Baby">
+          </div>
+          <a href="#" class="button">Shop Now</a>
+        </div>
+        <ul class="items">
+          <li>
+            <div class="top">
+              <a href="#"><img src="./images/icons/Icon feather-heart-2-svg.svg" alt="Whishlist"></a>
+            </div>
+            <div class="main">
+              <a href="#"><img src="./images/Babymilk-png.png" alt="Milk" class="milk"></a>
+            </div>
+            <div class="text">
+              <small>Milk</small>
+              <span>₹ 1250</span>
+            </div>
+            <div class="bottom">
+              <div class="rate">
+                <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+                <span>4.5</span>
+              </div>
+              <div class="cart">
+                <a href="#" class="addcart">
+                  <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="top">
+              <a href=""><img src="./images/icons/wish-list-empty.svg" alt="Whishlist"></a>
+            </div>
+            <div class="main">
+              <a href="#"><img src="./images/Teddybear-png.png" alt="Bear" class="bear"></a>
+            </div>
+            <div class="text">
+              <small>Teady Bear</small>
+              <span>₹ 350</span>
+            </div>
+            <div class="bottom">
+              <div class="rate">
+                <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+                <span>4.5</span>
+              </div>
+              <div class="cart">
+                <a href="#" class="addcart">
+                  <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="top">
+              <a href=""><img src="./images/icons/wish-list-empty.svg" alt="Whishlist"></a>
+            </div>
+            <div class="main">
+              <a href="#"><img src="./images/Toys-png.png" alt="Toys" class="toys"></a>
+            </div>
+            <div class="text">
+              <small>Toys</small>
+              <span>₹ 650</span>
+            </div>
+            <div class="bottom">
+              <div class="rate">
+                <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+                <span>4.5</span>
+              </div>
+              <div class="cart">
+                <a href="#" class="addcart">
+                  <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="top">
+              <a href="#"><img src="./images/icons/wish-list-fill.svg" alt="Whishlist"></a>
+            </div>
+            <div class="main">
+              <a href="#"><img src="./images/Dress-png.png" alt="Dress" class="dress"></a>
+            </div>
+            <div class="text">
+              <small>Dress</small>
+              <span>₹ 300</span>
+            </div>
+            <div class="bottom">
+              <div class="rate">
+                <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+                <span>4.5</span>
+              </div>
+              <div class="cart">
+                <a href="#" class="addcart">
+                  <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="top">
+              <a href=""><img src="./images/icons/wish-list-empty.svg" alt="Whishlist"></a>
+            </div>
+            <div class="main">
+              <a href="#"><img src="./images/Pempers-png.png" alt="Pembers" class="paam"></a>
+            </div>
+            <div class="text">
+              <small>Pambers</small>
+              <span>₹ 120</span>
+            </div>
+            <div class="bottom">
+              <div class="rate">
+                <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+                <span>4.5</span>
+              </div>
+              <div class="cart">
+                <a href="#" class="addcart">
+                  <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="top">
+              <a href=""><img src="./images/icons/wish-list-empty.svg" alt="Whishlist"></a>
+            </div>
+            <div class="main">
+              <a href="#"><img src="./images/Babbylotion-png.png" alt="Lotions" class="lotions"></a>
+            </div>
+            <div class="text">
+              <small>Baby Lotion</small>
+              <span>₹ 410</span>
+            </div>
+            <div class="bottom">
+              <div class="rate">
+                <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+                <span>4.5</span>
+              </div>
+              <div class="cart">
+                <a href="#" class="addcart">
+                  <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- feature-product-end -->
+
+  <!-- baby-section-start -->
+
+  <div class="baby">
+    <div class="wrapper">
+      <div class="container">
+        <div class="image">
+          <img src="./images/Baby2-png.png" alt="Baby">
+        </div>
+        <div class="text">
+          <h1>All <span>BABY</span> Items Upto</h1>
+          <h1><span>15% </span>Off</h1>
+          <div class="shopnow"><a href="#" class="button">Shop Now</a></div>
+        </div>
+        <div class="image">
+          <img src="./images/Baby3-png.png" alt="Baby">
+        </div>
+      </div>
+      <ul class="items">
+        <li>
+          <div class="top">
+            <img src="./images/icons/Icon feather-heart-2-svg.svg" alt="Heart">
+          </div>
+          <div class="main">
+            <img src="./images/Walker-png.png" alt="Walker" class="walker">
+          </div>
+          <div class="text">
+            <span>Wlaker</span>
+            <small>₹ 850</small>
+          </div>
+          <div class="bottom">
+            <div class="rate">
+              <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+              <span>4.5</span>
+            </div>
+            <div class="cart">
+              <a href="#" class="addcart">
+                <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+              </a>
+            </div>
+        </li>
+        <li>
+          <div class="top">
+            <img src="./images/icons/Icon feather-heart-2-svg.svg" alt="Heart">
+          </div>
+          <div class="main">
+            <img src="./images/Pumbsbox-png.png" alt="Pumbsbox" class="bump">
+          </div>
+          <div class="text">
+            <span>Bump Boxes</span>
+            <small>₹ 350</small>
+          </div>
+          <div class="bottom">
+            <div class="rate">
+              <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+              <span>4.5</span>
+            </div>
+            <div class="cart">
+              <a href="#" class="addcart">
+                <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+              </a>
+            </div>
+        </li>
+        <li>
+          <div class="top">
+            <img src="./images/icons/Icon feather-heart-2-svg.svg" alt="Heart">
+          </div>
+          <div class="main">
+            <img src="./images/Tshirts-png.png" alt="Tshirt" class="tshirt">
+          </div>
+          <div class="text">
+            <span>T-Shirt</span>
+            <small>₹ 430</small>
+          </div>
+          <div class="bottom">
+            <div class="rate">
+              <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+              <span>4.5</span>
+            </div>
+            <div class="cart">
+              <a href="#" class="addcart">
+                <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+              </a>
+            </div>
+        </li>
+        <li>
+          <div class="top">
+            <img src="./images/icons/Icon feather-heart-2-svg.svg" alt="Heart">
+          </div>
+          <div class="main">
+            <img src="./images/Toycar-png.png" alt="Toys" class="toys">
+          </div>
+          <div class="text">
+            <span>Toy Red Car</span>
+            <small>₹ 650</small>
+          </div>
+          <div class="bottom">
+            <div class="rate">
+              <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+              <span>4.5</span>
+            </div>
+            <div class="cart">
+              <a href="#" class="addcart">
+                <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+              </a>
+            </div>
+        </li>
+        <li>
+          <div class="top">
+            <img src="./images/icons/Icon feather-heart-2-svg.svg" alt="Heart">
+          </div>
+          <div class="main">
+            <img src="./images/Babyoil-png.png" alt="BabyOil" class="oil">
+          </div>
+          <div class="text">
+            <span>Baby Oil</span>
+            <small>₹ 160</small>
+          </div>
+          <div class="bottom">
+            <div class="rate">
+              <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+              <span>4.5</span>
+            </div>
+            <div class="cart">
+              <a href="#" class="addcart">
+                <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+              </a>
+            </div>
+        </li>
+        <li>
+          <div class="top">
+            <img src="./images/icons/Icon feather-heart-2-svg.svg" alt="Heart">
+          </div>
+          <div class="main">
+            <img src="./images/Dress2-png.png" alt="Dress" class="dress">
+          </div>
+          <div class="text">
+            <span>Cloth</span>
+            <small>₹ 260</small>
+          </div>
+          <div class="bottom">
+            <div class="rate">
+              <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+              <span>4.5</span>
+            </div>
+            <div class="cart">
+              <a href="#" class="addcart">
+                <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+              </a>
+            </div>
+        </li>
+        <li>
+          <div class="top">
+            <img src="./images/icons/Icon feather-heart-2-svg.svg" alt="Heart">
+          </div>
+          <div class="main">
+            <img src="./images/Chappel-png.png" alt="Chappel" class="chappel">
+          </div>
+          <div class="text">
+            <span>Chappel</span>
+            <small>₹ 410</small>
+          </div>
+          <div class="bottom">
+            <div class="rate">
+              <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+              <span>4.5</span>
+            </div>
+            <div class="cart">
+              <a href="#" class="addcart">
+                <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+              </a>
+            </div>
+        </li>
+        <li>
+          <div class="top">
+            <img src="./images/icons/Icon feather-heart-2-svg.svg" alt="Heart">
+          </div>
+          <div class="main">
+            <img src="./images/Dressred-png.png" alt="Dress" class="dressred">
+          </div>
+          <div class="text">
+            <span>Baby Oil</span>
+            <small>₹ 410</small>
+          </div>
+          <div class="bottom">
+            <div class="rate">
+              <img src="./images/icons/Icon ionic-ios-star.svg" alt="Star">
+              <span>4.5</span>
+            </div>
+            <div class="cart">
+              <a href="#" class="addcart">
+                <img src="./images/icons/cart-icon-home.svg" alt="Cart">
+              </a>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- baby-section-end -->
+
+  <!-- footer -->
+  <footer>
+    <div class="wrapper">
+      <div class="detials">
+        <div class="logo">
+          <img src="./images/icons/onaiza-white-logo.svg" alt="Logo">
+        </div>
+        <div class="contact">
+          <h1>contact:</h1>
+          <span><a href="#">onaiza@gmail.com</a></span>
+          <span><a href="#">+91 787 8001 200</a></span>
+        </div>
+        <div class="address">
+          <h1>Address:</h1>
+          <span><a href="#">onaiza, Group of company</a></span>
+          <span><a href="#">Trivandram</a></span>
+        </div>
+        <div class="social">
+          <h1>Social:</h1>
+          <ul>
+            <li><a href="#"><img src="./images/icons/Facebook-svg.svg" alt="Facebook"></a></li>
+            <li><a href="#"><img src="./images/icons/whatsapp (1).svg" alt="Whatsapp" class="whatsapp"></a></li>
+            <li><a href="#"><img src="./images/icons/Instagram-svg.svg" alt="Instagram"></a></li>
+            <li><a href="#"><img src="./images/icons/icons8-twitter.svg" alt="Twitter"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2020 Onaiza. All rights reserved | Developed by <a href="#">Talrop</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-end -->
+</body>
+
+</html>
