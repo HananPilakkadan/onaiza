@@ -52,6 +52,9 @@
 body {
   font-family: "poppinsmedium";
 }
+body.active {
+  overflow: hidden;
+}
 h1 {
   font-family: "poppinsbold";
 }
@@ -145,6 +148,9 @@ header .nav {
   display: flex;
   align-items: center;
 }
+header .user-bar {
+  display: none;
+}
 header .nav li {
   margin-right: 50px;
 }
@@ -163,7 +169,10 @@ header .nav li:last-child {
   margin-right: 0;
 }
 header .mobile-menu {
-    display: none;
+  display: none;
+}
+header .mobile-menu .lang {
+  display: none;
 }
 header .menu-icon {
   display: none;
@@ -642,6 +651,9 @@ footer .detials li {
   margin-right: 20px;
   filter: grayscale(100);
 }
+footer .detials li:last-child {
+  margin-right: 0;
+}
 footer .detials .logo img {
   width: 40%;
 }
@@ -728,15 +740,17 @@ footer .copyright p a:hover {
     text-align: center;
     justify-content: center;
     background: #fd8b06;
+    z-index: 9999;
   }
-  header .mobile-menu.active {
+  .active header .mobile-menu {
     visibility: visible;
     opacity: 1;
-    height: 100px;
+    height: 200px;
     transition: 0.3s ease-in;
   }
   header .mobile-menu li {
     opacity: 0.6;
+    margin-bottom: 30px;
   }
   header .mobile-menu li:hover {
     opacity: 1;
@@ -747,7 +761,6 @@ footer .copyright p a:hover {
     font-weight: 600;
   }
   header .mobile-menu li:nth-child(2) {
-    margin: 0 50px;
     opacity: 1;
   }
   .feature .content {
@@ -771,7 +784,7 @@ footer .copyright p a:hover {
     padding: 50px 0;
   }
   .baby .items li {
-      width: 30%;
+    width: 30%;
   }
   .baby .container .text {
     margin: 60px auto;
@@ -809,12 +822,15 @@ footer .copyright p a:hover {
     visibility: hidden;
     padding-bottom: 0;
   }
+  .category .cate {
+    display: block;
+  }
   .category .content select {
     margin-bottom: 30px;
     width: 45%;
     margin-right: 20px;
   }
-  .category:hover .content {
+  .category .content.active {
     visibility: visible;
     height: 180px;
     margin-top: 20px;
@@ -842,4 +858,141 @@ footer .copyright p a:hover {
     width: 40%;
   }
 }
+@media all and (max-width: 640px) {
+  header .nav {
+    display: none;
+  }
+  header .mobile-menu {
+    flex-direction: column-reverse;
+    padding: 20px 0;
+  }
+  header .mobile-menu .option {
+    display: flex;
+    margin-top: 30px;
+  }
+  header .mobile-menu .option  li:nth-child(2){
+    margin: 0 50px;
+  }
+  header .user-bar {
+    display: flex;
+  }
+  .baby .items li {
+    width: 34%;
+    height: 335px;
+  }
+  .baby .items li .main .oil {
+    width: 45%;
+  }
+  .baby .items li .main .dress {
+    width: 60%;
+  }
+  .feature .deal-of-day {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+}
+@media all and (max-width: 480px) {
+  header .menu-icon {
+    margin-left: 0;
+  }
+  header select {
+    display: none;
+  }
+  header .logo-container .search-bar {
+    margin-left: 30px;
+  }
+  header .mobile-menu {
+    padding: 26px 0;
+  }
+  header .mobile-menu .lang {
+    display: block;
+    margin: 0 auto 40px;
+  }
+  .shops h1 {
+    font-size: 28px;
+  }
+  .feature .wrapper h1 {
+    font-size: 28px;
+  }
+  .feature .deal-of-day {
+    width: 80%;
+    padding-bottom: 50px;
+  }
+  .feature .items li {
+    width: 65%;
+    margin-right: 0;
+    height: 370px;
+  }
+  .feature .items li:nth-child(n + 4) {
+    margin-bottom: 24px;
+  }
+  .baby .container .text h1 span {
+    font-size: 38px;
+  }
+  .feature .items li:nth-child(3n) {
+    margin-right: 0;
+  }
+  .baby .items li {
+    width: 75%;
+    height: 445px;
+  }
+  footer {
+    padding-top: 12%;
+  }
+  footer .detials .logo img {
+    width: 35%;
+  }
+  footer .contact h1 {
+    font-size: 18px;
+  }
+  footer .address h1 {
+    font-size: 18px;
+  }
+  footer .detials li img {
+    width: 30px;
+  }
+  footer .social ul .whatsapp {
+    width: 33px;
+  }
+  footer .copyright p {
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+}
+@media all and (max-width: 360px){
+  .shops .container .item {
+    margin-right: 0;
+  }
+  .shops .next-arrow {
+    right: -15px;
+    position: relative;
+  }
+  .feature .items li {
+    height: 350px;
+  }
+  .baby .items li {
+    height: 400px;
+  }
+  footer .detials li img {
+    width: 25px;
+  }
+  footer .social ul .whatsapp {
+    width: 28px;
+  }
+}
+@media all and (max-width: 320px) {
+  .feature .deal-of-day {
+    padding-bottom: 110px;
+  }
+  .feature .items li {
+    height: 312px;
+  }
+  .baby .items li {
+    height: 358px;
+  }
+  footer .copyright p {
+    font-size: 16px;
+  }
+}
+
 /* responsive-screen-end */
