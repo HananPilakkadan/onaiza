@@ -35,11 +35,13 @@
           <li class="changed"><a href="#">SHOP</a></li>
           <li><a href="#">OFFER</a></li>
         </ul>
-        <ul class="mobile-menu">
-          <li><a href="#">HOME</a></li>
-          <li class="changed"><a href="#">SHOP</a></li>
-          <li><a href="#">OFFER</a></li>
-          <ul class="nav">
+        <div class="mobile-menu">
+          <ul class="option">
+            <li><a href="#">HOME</a></li>
+            <li class="changed"><a href="#">SHOP</a></li>
+            <li><a href="#">OFFER</a></li>
+          </ul>
+          <ul class="nav user-bar">
             <li>
               <a href="#"><img src="./images/icons/help (1).svg" alt="Help" /></a>
             </li>
@@ -53,7 +55,11 @@
               <a href="#"><img src="./images/icons/profile.svg" alt="USer" /></a>
             </li>
           </ul>
-        </ul>
+          <select name="" id="" class="lang">
+            <option value="EN">EN</option>
+            <option value="AR">AR</option>
+          </select>
+        </div>
       </div>
       <div class="user-section">
         <select name="" id="">
@@ -83,10 +89,9 @@
   <!-- header-end -->
 
   <!--category-start -->
-
   <div class="category">
     <div class="wrapper">
-      <div class="cate">
+      <div class="cate" onclick="showOption()">
         <span>category <img src="./images/icons/Downarow-svg.svg" alt="Arrow"></span>
       </div>
       <div class="content">
@@ -593,7 +598,7 @@
         </div>
       </div>
       <div class="copyright">
-        <p>&copy; 2020 Onaiza. All rights reserved | Developed by <a href="#">Talrop</a></p>
+        <p>&copy; 2020 Onaiza. All rights reserved | Developed by <a href="https://talrop.com">Talrop</a></p>
       </div>
     </div>
   </footer>

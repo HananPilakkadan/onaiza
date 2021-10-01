@@ -28,10 +28,10 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 641,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             },
             {
@@ -48,5 +48,8 @@ $(document).ready(function () {
     });
 });
 function showMenu(){
-    $("header .mobile-menu").toggleClass("active")
+    $("body").toggleClass("active")
+}
+function showOption(){
+    $(".category .content").toggleClass("active")
 }
