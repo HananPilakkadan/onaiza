@@ -1,10 +1,4 @@
 $(document).ready(function () {
-    var navMenus = $("header .menu li");
-    navMenus.click(function () {
-        navMenus.removeClass('changed');
-        $(this).addClass("changed");
-    });
-
     $('.slider').slick({
         dots: false,
         infinite: true,
@@ -41,15 +35,29 @@ $(document).ready(function () {
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
+    window.onscroll = function () {
+        headerFunction();
+    };
+    var body = document.body;
+    var sticky = body.offsetTop;
+
+    function headerFunction() {
+        if (window.pageYOffset > 100) {
+            body.classList.add("sticky");
+        } else {
+            body.classList.remove("sticky");
+        }
+    }
+    
 });
-function showMenu(){
+function showMenu() {
     $("body").toggleClass("active")
 }
-function showOption(){
+function showOption() {
     $(".category .content").toggleClass("active")
+}
+function dropDown() {
+    $(".dropdown-content").toggleClass("show");
 }
